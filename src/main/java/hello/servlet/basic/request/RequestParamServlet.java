@@ -37,5 +37,11 @@ public class RequestParamServlet extends HttpServlet {
         System.out.println();
         response.getWriter().write("OK");
 
+        /**
+         * request.getParameter를 이용하면 GET, POST 메소드 모든 파라미터 받을 수 있다.
+         * POST 메시지 바디에 username=kim&age=20 이런식으로 쿼리파라미터 형식으로 보내주기 때문
+         *
+         */
+
     }
 }
