@@ -30,7 +30,7 @@ public class FrontControllerServletV2 extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String requestURI = request.getRequestURI(); // /front-controller/v1/members/new-form
+        String requestURI = request.getRequestURI(); // /front-controller/v2/members/new-form
         // 다형성
         ControllerV2 controller = controllerMap.get(requestURI);
         if(controller == null) {
