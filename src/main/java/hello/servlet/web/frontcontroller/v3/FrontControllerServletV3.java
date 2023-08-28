@@ -53,8 +53,7 @@ public class FrontControllerServletV3 extends HttpServlet {
     }
 
     private static MyView viewResolver(String viewName) {
-        MyView view = new MyView("/WEB-INF/views/" + viewName + ".jsp");
-        return view;
+        return new MyView("/WEB-INF/views/" + viewName + ".jsp");
     }
 
     private static Map<String, String> createParamMap(HttpServletRequest request) {
