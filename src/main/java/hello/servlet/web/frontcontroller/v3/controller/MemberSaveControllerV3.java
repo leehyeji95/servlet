@@ -12,6 +12,8 @@ public class MemberSaveControllerV3 implements ControllerV3 {
     private MemberRepository memberRepository = MemberRepository.getInstance();
     @Override
     public ModelView process(Map<String, String> paramMap) {
+        // request.getParameter 에서 꺼내는게 아니라,
+        // frontController 에서 다 처리하고 요청 파라미터에 넣어준다.
         String username = paramMap.get("username");
         int age = Integer.parseInt(paramMap.get("age"));
 

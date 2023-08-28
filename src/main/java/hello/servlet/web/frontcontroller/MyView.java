@@ -27,6 +27,7 @@ public class MyView {
     }
 
     private static void modelToRequestAttribute(Map<String, Object> model, HttpServletRequest request) {
+        // request에 속성값으로 설정 (model -> Request 로 변경)
         model.forEach((key, value) -> request.setAttribute(key, value));
     }
 }
